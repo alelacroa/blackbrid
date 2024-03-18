@@ -35,7 +35,7 @@ const Copyright = () => {
 		<Typography variant="body2" color="textSecondary" align="center">
 			{"Copyright © "}
 			<Link color="inherit" href="#">
-				PLW
+				Black brid
 			</Link>{" "}
 		   {new Date().getFullYear()}
 			{"."}
@@ -198,7 +198,7 @@ const SignUp = () => {
 									/>
 								</Grid>
 								<Grid item xs={12}>
-									<InputLabel htmlFor="plan-selection">Plano</InputLabel>
+									<InputLabel htmlFor="plan-selection">Plan</InputLabel>
 									<Field
 										as={Select}
 										variant="outlined"
@@ -210,7 +210,7 @@ const SignUp = () => {
 									>
 										{plans.map((plan, key) => (
 											<MenuItem key={key} value={plan.id}>
-												{plan.name} - Atendentes: {plan.users} - WhatsApp: {plan.connections} - Filas: {plan.queues} - R$ {plan.value}
+												{plan.name} - Agentes: {plan.users} - WhatsApp: {plan.connections} - Filas: {plan.queues} - $ {plan.value}
 											</MenuItem>
 										))}
 									</Field>

@@ -320,7 +320,7 @@ const Dashboard = () => {
               value={period}
               onChange={(e) => handleChangePeriod(e.target.value)}
             >
-              <MenuItem value={0}>Nenhum selecionado</MenuItem>
+              <MenuItem value={0}>Ninguna seleccionada</MenuItem>
               <MenuItem value={3}>Últimos 3 dias</MenuItem>
               <MenuItem value={7}>Últimos 7 dias</MenuItem>
               <MenuItem value={15}>Últimos 15 dias</MenuItem>
@@ -328,7 +328,7 @@ const Dashboard = () => {
               <MenuItem value={60}>Últimos 60 dias</MenuItem>
               <MenuItem value={90}>Últimos 90 dias</MenuItem>
             </Select>
-            <FormHelperText>Selecione o período desejado</FormHelperText>
+            <FormHelperText>Seleccione el período deseado</FormHelperText>
           </FormControl>
         </Grid>
       );
@@ -366,7 +366,7 @@ const Dashboard = () => {
                     variant="h6"
                     paragraph
                   >
-                    Atd. Pendentes
+                    Atd. Pendientes
                   </Typography>
                   <Grid item>
                     <Typography
@@ -403,7 +403,7 @@ const Dashboard = () => {
                     variant="h6"
                     paragraph
                   >
-                    Atd. Acontecendo
+                    Atd. Sucediendo
                   </Typography>
                   <Grid item>
                     <Typography
@@ -477,7 +477,7 @@ const Dashboard = () => {
                     variant="h6"
                     paragraph
                   >
-                    Novos Contatos
+                    Nuevos contactos
                   </Typography>
                   <Grid item>
                     <Typography
@@ -583,10 +583,10 @@ const Dashboard = () => {
                 value={filterType}
                 onChange={(e) => handleChangeFilterType(e.target.value)}
               >
-                <MenuItem value={1}>Filtro por Data</MenuItem>
-                <MenuItem value={2}>Filtro por Período</MenuItem>
+                <MenuItem value={1}>Filtrar por fecha</MenuItem>
+                <MenuItem value={2}>Filtrar por período</MenuItem>
               </Select>
-              <FormHelperText>Selecione o período desejado</FormHelperText>
+              <FormHelperText>Seleccione el período deseado</FormHelperText>
             </FormControl>
           </Grid>
 

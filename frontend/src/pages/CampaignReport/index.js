@@ -147,7 +147,7 @@ const CampaignReport = () => {
       <MainHeader>
         <Grid style={{ width: "99.6%" }} container>
           <Grid xs={12} item>
-            <Title>Relatório da {campaign.name || "Campanha"}</Title>
+            <Title>Informe de {campaign.name || "Campanha"}</Title>
           </Grid>
         </Grid>
       </MainHeader>

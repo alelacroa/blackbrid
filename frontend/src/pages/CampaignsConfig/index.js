@@ -142,7 +142,7 @@ const CampaignsConfig = () => {
                 fullWidth
               >
                 <InputLabel id="messageInterval-label">
-                  Intervalo Randômico de Disparo
+                Intervalo de activación aleatorio
                 </InputLabel>
                 <Select
                   name="messageInterval"
@@ -152,7 +152,7 @@ const CampaignsConfig = () => {
                   value={settings.messageInterval}
                   onChange={(e) => handleOnChangeSettings(e)}
                 >
-                  <MenuItem value={0}>Sem Intervalo</MenuItem>
+                  <MenuItem value={0}>Sin descanso</MenuItem>
                   <MenuItem value={5}>5 segundos</MenuItem>
                   <MenuItem value={10}>10 segundos</MenuItem>
                   <MenuItem value={15}>15 segundos</MenuItem>
@@ -177,7 +177,7 @@ const CampaignsConfig = () => {
                   value={settings.longerIntervalAfter}
                   onChange={(e) => handleOnChangeSettings(e)}
                 >
-                  <MenuItem value={0}>Não definido</MenuItem>
+                  <MenuItem value={0}>No definido</MenuItem>
                   <MenuItem value={1}>1 segundo</MenuItem>
                   <MenuItem value={5}>5 segundos</MenuItem>
                   <MenuItem value={10}>10 segundos</MenuItem>
@@ -209,7 +209,7 @@ const CampaignsConfig = () => {
                   value={settings.greaterInterval}
                   onChange={(e) => handleOnChangeSettings(e)}
                 >
-                  <MenuItem value={0}>Sem Intervalo</MenuItem>
+                  <MenuItem value={0}>Sin descanso</MenuItem>
                   <MenuItem value={1}>1 segundo</MenuItem>
                   <MenuItem value={5}>5 segundos</MenuItem>
                   <MenuItem value={10}>10 segundos</MenuItem>
@@ -230,14 +230,14 @@ const CampaignsConfig = () => {
                 color="primary"
                 style={{ marginRight: 10 }}
               >
-                Adicionar Variável
+                Agregar variable
               </Button>
               <Button
                 onClick={saveSettings}
                 color="primary"
                 variant="contained"
               >
-                Salvar Configurações
+                Guardar ajustes
               </Button>
             </Grid>
             {showVariablesForm && (
@@ -268,14 +268,14 @@ const CampaignsConfig = () => {
                     color="primary"
                     style={{ marginRight: 10 }}
                   >
-                    Fechar
+                    Cerrar
                   </Button>
                   <Button
                     onClick={addVariable}
                     color="primary"
                     variant="contained"
                   >
-                    Adicionar
+                    Agregar
                   </Button>
                 </Grid>
               </>
@@ -286,8 +286,8 @@ const CampaignsConfig = () => {
                   <TableHead>
                     <TableRow>
                       <TableCell style={{ width: "1%" }}></TableCell>
-                      <TableCell>Atalho</TableCell>
-                      <TableCell>Conteúdo</TableCell>
+                      <TableCell>Atajo</TableCell>
+                      <TableCell>Contenido</TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>

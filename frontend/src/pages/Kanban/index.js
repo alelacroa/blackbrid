@@ -166,9 +166,9 @@ const Kanban = () => {
     try {
         
           await api.delete(`/ticket-tags/${targetLaneId}`);
-        toast.success('Ticket Tag Removido!');
+        toast.success('¡Se eliminó la etiqueta del ticket!');
           await api.put(`/ticket-tags/${targetLaneId}/${sourceLaneId}`);
-        toast.success('Ticket Tag Adicionado com Sucesso!');
+        toast.success('¡Etiqueta del ticket agregada exitosamente!');
 
     } catch (err) {
       console.log(err);
