@@ -264,7 +264,7 @@ const LoggedInLayout = ({ children, themeToggle }) => {
 
     socket.on(`company-${companyId}-auth`, (data) => {
       if (data.user.id === +userId) {
-        toastError("Sua conta foi acessada em outro computador.");
+        toastError("Se accedió a su cuenta desde otra computadora.");
         setTimeout(() => {
           localStorage.clear();
           window.location.reload();
