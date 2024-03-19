@@ -186,7 +186,7 @@ const QueueModal = ({ open, onClose, queueId }) => {
           ...values, schedules, promptId: selectedPrompt ? selectedPrompt : null
         });
       }
-      toast.success("Queue saved successfully");
+      toast.success("Fila guardada exitosamente");
       handleClose();
     } catch (err) {
       toastError(err);
@@ -194,7 +194,7 @@ const QueueModal = ({ open, onClose, queueId }) => {
   };
 
   const handleSaveSchedules = async (values) => {
-    toast.success("Clique em salvar para registar as alterações");
+    toast.success("Haga clic en guardar para registrar los cambios");
     setSchedules(values);
     setTab(0);
   };
@@ -225,7 +225,7 @@ const QueueModal = ({ open, onClose, queueId }) => {
           aria-label="disabled tabs example"
         >
           <Tab label="Dados da Fila" />
-          {schedulesEnabled && <Tab label="Horários de Atendimento" />}
+          {schedulesEnabled && <Tab label="Horas de servicio" />}
         </Tabs>
         {tab === 0 && (
           <Paper>

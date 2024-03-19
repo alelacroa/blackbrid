@@ -57,14 +57,14 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const PromptSchema = Yup.object().shape({
-    name: Yup.string().min(5, "Muito curto!").max(100, "Muito longo!").required("Obrigatório"),
-    prompt: Yup.string().min(50, "Muito curto!").required("Descreva o treinamento para Inteligência Artificial"),
-    voice: Yup.string().required("Informe o modo para Voz"),
-    max_tokens: Yup.number().required("Informe o número máximo de tokens"),
-    temperature: Yup.number().required("Informe a temperatura"),
-    apikey: Yup.string().required("Informe a API Key"),
-    queueId: Yup.number().required("Informe a fila"),
-    max_messages: Yup.number().required("Informe o número máximo de mensagens")
+    name: Yup.string().min(5, "¡Muy corto!").max(100, "¡Muy largo!").required("Obligatorio"),
+    prompt: Yup.string().min(50, "¡Muy corto!").required("Describir la formación en Inteligencia Artificial"),
+    voice: Yup.string().required("Ingrese al modo de voz"),
+    max_tokens: Yup.number().required("Ingrese el número máximo de tokens"),
+    temperature: Yup.number().required("Introduzca la temperatura"),
+    apikey: Yup.string().required("Ingrese la clave API KEY"),
+    queueId: Yup.number().required("Informe la fila"),
+    max_messages: Yup.number().required("Introduce el número máximo de mensajes")
 });
 
 const PromptModal = ({ open, onClose, promptId }) => {
@@ -124,7 +124,7 @@ const PromptModal = ({ open, onClose, promptId }) => {
     const handleSavePrompt = async values => {
         const promptData = { ...values, voice: selectedVoice };
         if (!values.queueId) {
-            toastError("Informe o setor");
+            toastError("Informar al sector");
             return;
         }
         try {
@@ -227,10 +227,10 @@ const PromptModal = ({ open, onClose, promptId }) => {
                                                 Texto
                                             </MenuItem>
                                             <MenuItem key={"pt-BR-FranciscaNeural"} value={"pt-BR-FranciscaNeural"}>
-                                                Francisa
+                                                Francisca
                                             </MenuItem>
                                             <MenuItem key={"pt-BR-AntonioNeural"} value={"pt-BR-AntonioNeural"}>
-                                                Antônio
+                                                Antonio
                                             </MenuItem>
                                             <MenuItem key={"pt-BR-BrendaNeural"} value={"pt-BR-BrendaNeural"}>
                                                 Brenda
@@ -266,7 +266,7 @@ const PromptModal = ({ open, onClose, promptId }) => {
                                                 Nicolau
                                             </MenuItem>
                                             <MenuItem key={"pt-BR-ValerioNeural"} value={"pt-BR-ValerioNeural"}>
-                                                Valério
+                                                Valaria
                                             </MenuItem>
                                             <MenuItem key={"pt-BR-YaraNeural"} value={"pt-BR-YaraNeural"}>
                                                 Yara

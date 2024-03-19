@@ -79,7 +79,7 @@ const Ticket = () => {
 
           const queueAllowed = queues.find((q) => q.id === queueId);
           if (queueAllowed === undefined && profile !== "admin") {
-            toast.error("Acesso não permitido");
+            toast.error("Acceso no permitido");
             history.push("/tickets");
             return;
           }
@@ -109,7 +109,7 @@ const Ticket = () => {
       }
 
       if (data.action === "delete") {
-        toast.success("Ticket deleted sucessfully.");
+        toast.success("Ticket eliminado exitosamente");
         history.push("/tickets");
       }
     });

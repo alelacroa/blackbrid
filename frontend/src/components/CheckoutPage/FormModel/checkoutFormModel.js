@@ -3,40 +3,40 @@ export default {
   formField: {
     firstName: {
       name: 'firstName',
-      label: 'Nome completo*',
-      requiredErrorMsg: 'O nome completo é obrigatório'
+      label: 'Nombre completo*',
+      requiredErrorMsg: 'El nombre completo es obligatorio'
     },
     lastName: {
       name: 'lastName',
-      label: 'Last name*',
-      requiredErrorMsg: 'Last name is required'
+      label: 'Apellido*',
+      requiredErrorMsg: 'Apellido es requerido'
     },
     address1: {
       name: 'address2',
-      label: 'Endereço*',
-      requiredErrorMsg: 'O Endereço é obrigatório'
+      label: 'Direccion*',
+      requiredErrorMsg: 'Diereccion es requerido'
     },
 
     city: {
       name: 'city',
-      label: 'Cidade*',
-      requiredErrorMsg: 'Cidade é obrigatória'
+      label: 'Ciudad*',
+      requiredErrorMsg: 'Ciudad es obligatorio'
     },
     state: {
       name: 'state',
-      label: 'Estado*',
-      requiredErrorMsg: 'Cidade é obrigatória'
+      label: 'Provincia*',
+      requiredErrorMsg: 'Provincia es obligatorio'
     },
     zipcode: {
       name: 'zipcode',
-      label: 'CEP*',
-      requiredErrorMsg: 'CEP é obrigatório',
-      invalidErrorMsg: 'Formato de CEP inválido'
+      label: 'CP*',
+      requiredErrorMsg: 'CEP es obligatorio',
+      invalidErrorMsg: 'Formato de CP inválido'
     },
     country: {
       name: 'country',
       label: 'País*',
-      requiredErrorMsg: 'País é obrigatório'
+      requiredErrorMsg: 'País es obligatorio'
     },
     useAddressForPaymentDetails: {
       name: 'useAddressForPaymentDetails',

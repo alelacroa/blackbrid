@@ -76,7 +76,7 @@ function SchedulesForm(props) {
                       <Container>
                           <FastField
                             as={TextField}
-                            label="Dia da Semana"
+                            label="Día de Semana"
                             name={`schedules[${index}].weekday`}
                             disabled
                             variant="outlined"
@@ -128,7 +128,7 @@ function SchedulesForm(props) {
               color="primary"
               variant="contained"
             >
-              {labelSaveButton ?? "Salvar"}
+              {labelSaveButton ?? "Grabar"}
             </ButtonWithSpinner>
           </div>
         </Form>

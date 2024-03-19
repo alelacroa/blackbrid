@@ -254,7 +254,7 @@ const QueueIntegration = ({ open, onClose, integrationId }) => {
                               required
                             >
                               <MenuItem value="pt-BR">Portugues</MenuItem>
-                              <MenuItem value="en">Inglês</MenuItem>
+                              <MenuItem value="en">Ingles</MenuItem>
                               <MenuItem value="es">Español</MenuItem>
                             </Field>
                           </FormControl>

@@ -302,12 +302,12 @@ const useStyles = makeStyles((theme) => ({
 	
 	    const handleSendMessage = async (id) => {
         
-        const msg = `{{ms}} *{{name}}*, meu nome é *${user?.name}* e agora vou prosseguir com seu atendimento!`;
+        const msg = `{{ms}} *{{name}}*, mi nombre es *${user?.name}* y ahora continuaré con tu servicio`;
         const message = {
             read: 1,
             fromMe: true,
             mediaUrl: "",
-            body: `*Mensagem Automática:*\n${msg.trim()}`,
+            body: `*Mensaje automático:*\n${msg.trim()}`,
         };
         try {
             await api.post(`/messages/${id}`, message);
@@ -376,7 +376,7 @@ const useStyles = makeStyles((theme) => ({
           [classes.pendingTicket]: ticket.status === "pending",
         })}
       >
-        <Tooltip arrow placement="right" title={ticket.queue?.name?.toUpperCase() || "SEM FILA"} >
+        <Tooltip arrow placement="right" title={ticket.queue?.name?.toUpperCase() || "SIM FILA"} >
           <span style={{ backgroundColor: ticket.queue?.color || "#7C7C7C" }} className={classes.ticketQueueColor}></span>
         </Tooltip>
         <ListItemAvatar>
@@ -417,7 +417,7 @@ const useStyles = makeStyles((theme) => ({
               >
                 {ticket.contact.name}
                 {profile === "admin" && (
-                  <Tooltip title="Espiar Conversa">
+                  <Tooltip title="Auditar conversación">
                     <VisibilityIcon
                       onClick={() => setOpenTicketMessageDialog(true)}
                       fontSize="small"
@@ -446,11 +446,11 @@ const useStyles = makeStyles((theme) => ({
                 component="span"
                 variant="body2"
                 color="textSecondary"
-              > {ticket.lastMessage.includes('data:image/png;base64') ? <MarkdownWrapper> Localização</MarkdownWrapper> : <MarkdownWrapper>{ticket.lastMessage}</MarkdownWrapper>}
+              > {ticket.lastMessage.includes('data:image/png;base64') ? <MarkdownWrapper> Ubicación</MarkdownWrapper> : <MarkdownWrapper>{ticket.lastMessage}</MarkdownWrapper>}
                 <span className={classes.secondaryContentSecond} >
                   {ticket?.whatsapp?.name ? <Badge className={classes.connectionTag}>{ticket?.whatsapp?.name?.toUpperCase()}</Badge> : <br></br>}
                   {ticketUser ? <Badge style={{ backgroundColor: "#000000" }} className={classes.connectionTag}>{ticketUser}</Badge> : <br></br>}
-                  <Badge style={{ backgroundColor: ticket.queue?.color || "#7c7c7c" }} className={classes.connectionTag}>{ticket.queue?.name?.toUpperCase() || "SEM FILA"}</Badge>
+                  <Badge style={{ backgroundColor: ticket.queue?.color || "#7c7c7c" }} className={classes.connectionTag}>{ticket.queue?.name?.toUpperCase() || "SIM FILA"}</Badge>
                 </span>
                 <span style={{ paddingTop: "2px" }} className={classes.secondaryContentSecond} >
                   {tag?.map((tag) => {

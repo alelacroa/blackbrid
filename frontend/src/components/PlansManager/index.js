@@ -280,7 +280,7 @@ export function PlanManagerForm(props) {
                         {/* INTEGRACOES */}
                         <Grid xs={12} sm={8} md={2} item>
                             <FormControl margin="dense" variant="outlined" fullWidth>
-                                <InputLabel htmlFor="useIntegrations-selection">Integrações</InputLabel>
+                                <InputLabel htmlFor="useIntegrations-selection">Integraciones</InputLabel>
                                 <Field
                                     as={Select}
                                     id="useIntegrations-selection"
@@ -375,7 +375,7 @@ export function PlansManagerGrid(props) {
                         <TableCell align="center">API Externa</TableCell>
                         <TableCell align="center">Kanban</TableCell>
                         <TableCell align="center">Open.Ai</TableCell>
-                        <TableCell align="center">Integrações</TableCell>
+                        <TableCell align="center">Integraciones</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -442,7 +442,7 @@ export default function PlansManager() {
             const planList = await list()
             setRecords(planList)
         } catch (e) {
-            toast.error('Não foi possível carregar a lista de registros')
+            toast.error('No se puede cargar la lista de registros')
         }
         setLoading(false)
     }
@@ -458,9 +458,9 @@ export default function PlansManager() {
             }
             await loadPlans()
             handleCancel()
-            toast.success('Operação realizada com sucesso!')
+            toast.success('¡Operación realizada con éxito!')
         } catch (e) {
-            toast.error('Não foi possível realizar a operação. Verifique se já existe uma plano com o mesmo nome ou se os campos foram preenchidos corretamente')
+            toast.error('No se pudo realizar la operación. Comprueba si ya existe un plan con el mismo nombre o si los campos se han rellenado correctamente')
         }
         setLoading(false)
     }
@@ -471,9 +471,9 @@ export default function PlansManager() {
             await remove(record.id)
             await loadPlans()
             handleCancel()
-            toast.success('Operação realizada com sucesso!')
+            toast.success('¡Operación realizada con éxito!')
         } catch (e) {
-            toast.error('Não foi possível realizar a operação')
+            toast.error('La operación no se pudo realizar.')
         }
         setLoading(false)
     }
@@ -547,12 +547,12 @@ export default function PlansManager() {
                 </Grid>
             </Grid>
             <ConfirmationModal
-                title="Exclusão de Registro"
+                title="Eliminación de registro"
                 open={showConfirmDialog}
                 onClose={() => setShowConfirmDialog(false)}
                 onConfirm={() => handleDelete()}
             >
-                Deseja realmente excluir esse registro?
+                ¿Realmente deseas eliminar este registro?
             </ConfirmationModal>
         </Paper>
     )

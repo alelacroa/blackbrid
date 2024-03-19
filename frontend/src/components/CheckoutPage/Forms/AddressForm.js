@@ -5,11 +5,11 @@ import { AuthContext } from "../../../context/Auth/AuthContext";
 
 const countries = [
   {
-    value: "BR",
-    label: "Brasil",
+    value: "AR",
+    label: "Argentina",
   },
   {
-    value: "usa",
+    value: "USA",
     label: "United States",
   },
 ];
@@ -48,7 +48,7 @@ export default function AddressForm(props) {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Vamos precisar de algumas informações
+        Necesitaremos alguna información
       </Typography>
       <Grid container spacing={3}>
 
