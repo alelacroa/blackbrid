@@ -342,7 +342,7 @@ function Chat(props) {
                 color="primary"
                 variant="contained"
               >
-                Nova
+                Nuevo
               </Button>
             </div>
           
@@ -398,7 +398,7 @@ function Chat(props) {
                 color="primary"
                 variant="contained"
               >
-                Novo
+                Nuevo
               </Button>
             </div>
             <ChatList
